@@ -1,0 +1,125 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, Helvetica, sans-serif;
+}
+
+.faq-section {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding: 92px 12px 164px;
+}
+.faq-section__header {
+  text-align: center;
+}
+.faq-section__surtitle {
+  font-family: open sans, sans-serif;
+}
+.faq-section__title {
+  font-size: 42px;
+  margin-bottom: 72px;
+}
+.faq__question {
+  border-bottom: 4px dotted #111;
+}
+
+.faq__question-toggler {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  color: #111;
+  padding: 24px 0;
+  cursor: pointer;
+}
+.faq__question-toggler-icon--active {
+  transform: rotate(90deg);
+}
+.faq__question-toggler-icon {
+  width: 30px;
+  height: 30px;
+}
+/* pour e.target */
+.faq__question-toggler-icon,
+.faq__question-toggler-text {
+  pointer-events: none;
+}
+
+.faq__question-toggler-text {
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 12px;
+}
+
+.faq__question-toggler-question-mark {
+  color: midnightblue;
+}
+/* Animation de "hauteur" avec CSS Grid */
+.faq__content-container {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 400ms ease;
+}
+.faq__content-container--active {
+  grid-template-rows: 1fr;
+}
+.faq__content {
+  overflow: hidden;
+}
+
+.faq__content-text {
+  color: #111;
+  line-height: 1.6;
+  font-size: 18px;
+  padding-bottom: 28px;
+}
+
+.faq__link {
+  color: #111;
+  font-weight: 500;
+  text-decoration-thickness: 2px;
+}
+
+@media (max-width: 800px) {
+  .faq-section {
+    padding: 74px 12px 142px;
+  }
+  .faq__question {
+    border-bottom: 3px dotted #111;
+  }
+  .faq__question-toggler {
+    padding: 16px 0;
+  }
+  .faq__question-toggler-text {
+    font-size: 18px;
+  }
+  .faq__question-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .faq-section {
+    padding: 84px 12px 142px;
+  }
+  .faq__question {
+    border-bottom: 2px dotted #111;
+  }
+  .faq__question-toggler {
+    padding: 12px 0;
+  }
+  .faq__question-toggler-text {
+    font-size: 16px;
+  }
+  .faq__question-text {
+    font-size: 14px;
+  }
+}
