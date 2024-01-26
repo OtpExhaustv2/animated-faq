@@ -26,6 +26,9 @@ body {
   font-size: 42px;
   margin-bottom: 72px;
 }
+.faq__questions-list {
+  list-style: none;
+}
 .faq__question {
   border-bottom: 4px dotted #111;
 }
