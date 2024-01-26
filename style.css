@@ -68,12 +68,15 @@ body {
   display: grid;
   grid-template-rows: 0fr;
   visibility: hidden;
+  opacity: 0;
   transition: 
   visibility 400ms ease,
+  opacity 400ms ease,
   grid-template-rows 400ms ease;
 }
 .faq__content-container--active {
   visibility: visible;
+  opacity: 1;
   grid-template-rows: 1fr;
 }
 .faq__content {
