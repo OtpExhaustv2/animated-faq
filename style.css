@@ -67,9 +67,13 @@ body {
 .faq__content-container {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows 400ms ease;
+  visibility: hidden;
+  transition: 
+  visibility 400ms ease,
+  grid-template-rows 400ms ease;
 }
 .faq__content-container--active {
+  visibility: visible;
   grid-template-rows: 1fr;
 }
 .faq__content {
