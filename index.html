@@ -1,141 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <main>
-      <section class="faq-section">
-        <header class="faq-section__header">
-          <p class="faq-section__surtitle">Cliquez sur les questions</p>
-          <h1 class="faq-section__title">Foire aux questions</h1>
-        </header>
-        <article class="faq">
-          <ul class="faq__questions-list">
-            <li class="faq__question">
-              <button
-                class="faq__question-toggler"
-                aria-expanded="true"
-                aria-controls="content-container-1"
-                id="accordion-btn1"
-              >
-                <img
-                  src="icons/chevron.svg"
-                  alt=""
-                  class="faq__question-toggler-icon faq__question-toggler-icon--active"
-                />
-                <span class="faq__question-toggler-text"
-                  >Peut-on annuler à tout moment?</span>
-              </button>
-              <div
-                class="faq__content-container faq__content-container--active"
-                aria-labelledby="accordion-btn1"
-                id="content-container-1"
-              >
-                <div class="faq__content">
-                  <p class="faq__content-text">
-                    Oui, il vous suffit de cliquer sur votre
-                    <strong
-                      >profil > gérer les abonnements > annuler l'abonnement.
-                    </strong>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="faq__question">
-              <button
-                class="faq__question-toggler"
-                aria-expanded="false"
-                aria-controls="content-container-2"
-                id="accordion-btn2"
-              >
-                <img
-                  src="icons/chevron.svg"
-                  alt=""
-                  class="faq__question-toggler-icon"
-                /><span class="faq__question-toggler-text">Comment rejoindre la communauté ?</span
-                >
-              </button>
-              <div class="faq__content-container" id="content-container-2"    aria-labelledby="accordion-btn2">
-                <div class="faq__content">
-                  <p class="faq__content-text">
-                    Il vous suffit de
-                    <a class="faq__link" href="https://discord.gg/XFP75gW"
-                      >rejoindre le serveur Discord</a>
-                    dans lequel vous pouvez discuter développement web, demander
-                    de l'aide ou encore participer à des concours ou des
-                    exercices.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="faq__question">
-              <button
-                class="faq__question-toggler"
-                aria-expanded="false"
-                aria-controls="content-container-3"
-                id="accordion-btn3"
-              >
-                <img
-                  src="icons/chevron.svg"
-                  alt=""
-                  class="faq__question-toggler-icon"
-                /><span class="faq__question-toggler-text">Qu'est-ce que le parcours Front-End ?</span
-                >
-              </button>
-              <div class="faq__content-container" id="content-container-3" aria-labelledby="accordion-btn3">
-                <div class="faq__content">
-                  <p class="faq__content-text">
-                    Le <a class="faq__link" href="https://www.ecole-du-web.net/p/parcours">Parcours Front-End</a> est une feuille de
-                    route vous permettant de suivre les cours qui feront de vous
-                    un développeur Front-End dans l'ordre.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="faq__question">
-              <button
-                class="faq__question-toggler"
-                aria-expanded="false"
-                aria-controls="content-container-4"
-                id="accordion-btn4"
-              >
-                <img
-                  src="icons/chevron.svg"
-                  alt=""
-                  class="faq__question-toggler-icon"
-                /><span class="faq__question-toggler-text"
-                  >Comment s'entraîner ?</span>
-              </button>
-              <div class="faq__content-container" id="content-container-4" aria-labelledby="accordion-btn4">
-                <div class="faq__content">
-                  <p class="faq__content-text">
-                    Il est très important de pratiquer quand on apprend de
-                    nouvelles compétences, c'est pourquoi j'ai
-                    <a
-                      class="faq__link"
-                      href="https://www.ecole-du-web.net/p/entrainement"
-                      >une page</a>
-                    spécialement remplie de dizaines de cours et de projets
-                    pratiques!
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </article>
-      </section>
-    </main>
-    <script src="script.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FAQ</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<main>
+			<section class="faq-section">
+				<header class="faq-section__header">
+					<p class="faq-section__surtitle">Cliquez sur les questions</p>
+					<h1 class="faq-section__title">Foire aux questions</h1>
+				</header>
+				<article class="faq">
+					<ul class="faq__questions-list"></ul>
+				</article>
+			</section>
+		</main>
+		<script src="script.js" type="module"></script>
+	</body>
 </html>
