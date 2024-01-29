@@ -7,9 +7,8 @@ function handleQuestionToggle(e){
   const iconToAnimate = toggler.querySelector(".faq__question-toggler-icon")
   const toggledState = toggler.getAttribute("aria-expanded") === "true" ? true : false
 
-  
-  const action = toggledState ? 'remove' : 'add';
-  contentToToggle.classList[action]("faq__content-container--active");
+
+  contentToToggle.classList.toggle("faq__content-container--active");
   toggler.setAttribute("aria-expanded", toggledState ? false : true);
-  iconToAnimate.classList[action]("faq__question-toggler-icon--active");
+  iconToAnimate.classList.toggle("faq__question-toggler-icon--active");
 }
